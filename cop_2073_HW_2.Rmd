@@ -55,7 +55,7 @@ In this problem you will practice some basic R operations. Include solutions to 
 (a) Create a variable called `my_name` that contains *your preferred name*.
 
     ```{r}
-    my_name = "Josiah Jackson"
+    my_name <- "Josiah Jackson"
     print(my_name)
 
     ```
@@ -63,28 +63,28 @@ In this problem you will practice some basic R operations. Include solutions to 
 (b) Create a variable called `name_length` that holds how many letters are in `my_name`.
 
     ```{r}
-    name_length = length(my_name)
+    name_length <- length(my_name)
 
     ```
 
 (c) Show which value is bigger: $e^\pi$ or $\pi^e$. (Use the correct expressions for Euler's constant $e$ and the irrational number $\pi$ in R)
 
     ```{r}
-    euler_constant = -digamma(1)
+    euler_constant <- -digamma(1)
     euler_constant^(pi) > pi^(euler_constant)
     ```
 
 (d) Use the colon operator `:` to create a vector `v` of numbers from 31 to 86. Find the length of this vector using the `length()` function.
 
     ```{r}
-    v = 31:86
+    v <- 31:86
     print(length(v))
     ```
 
 (e) Use the `seq()` function to produce a range of number from -5 to 10 in 0.5 increments.
 
     ```{r}
-    num_range = seq(from = -5, to = 10, by = 0.5)
+    num_range <- seq(from = -5, to = 10, by = 0.5)
     print(num_range)
     ```
 
@@ -93,8 +93,8 @@ In this problem you will practice some basic R operations. Include solutions to 
 (a) (10 points) Define a function `imperial_to_metric` that takes in **two arguments**: a number of feet and a number of inches. The function should return the equivalent length in meters
 
     ```{r}
-    imperial_to_metric = function(length_feet, length_inches){
-      length_meters = (length_feet * 0.3048) + (length_inches * 0.0254)
+    imperial_to_metric <- function(length_feet, length_inches){
+      length_meters <- (length_feet * 0.3048) + (length_inches * 0.0254)
       return(length_meters)
     }
     ```
@@ -104,7 +104,7 @@ In this problem you will practice some basic R operations. Include solutions to 
 (b) (5 points) Create a variable `height_in_meters` by passing your height in imperial to the `imperial_to_metric` function.
 
     ```{r}
-    height_in_meters = imperial_to_metric(6,2)
+    height_in_meters <- imperial_to_metric(6,2)
     print(height_in_meters)
     ```
 
@@ -119,6 +119,6 @@ In this problem you will practice some basic R operations. Include solutions to 
 (d) (5 points) Create an object named `die` that contains the numbers one through six. Simulate a roll of the die with `R`'s `sample()` function.
 
     ```{r}
-    die = 1:6
+    die <- 1:6
     sample(die, 1)
     ```
